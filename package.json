@@ -32,5 +32,10 @@
     "babel-plugin-graphql-tag": "^2.5.0"
   },
   "keywords": [],
-  "description": ""
+  "description": "",
+  "proxy": {
+    "/api": {
+        "target": "http://localhost:8080/"
+      }
+  }
 }

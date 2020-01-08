@@ -20,7 +20,7 @@ const CREATE_PRODUCT_MUTATION = gql`
         sku: $sku
         upc: $upc
         releaseDate: $releaseDate
-        price: $price
+        price: {amount: $price, currency: "OMR"}
         title: $title
         active: $active
         variationOptions: [
